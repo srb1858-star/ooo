@@ -1,51 +1,51 @@
-pt_shell> report_timing -delay_type max -from dig/lane0/rx_stat_cptr_stcnt_0_in_vec_s01_reg_37_ -to dig/lane0/rx_rx_valid_i_reg -pba_mode ex
+pt_shell> report_timing -delay_type max -from dig/lane0/rx_stat_cptr_stcnt_0_in_vec_s01_reg_37_ -to dig/lane0/rx_rx_valid_i_reg -delay_type max -path_type full_clock_expanded -input_pins -nets -transition_time -capacitance -significant_digits 4
+Warning: duplicate option '-delay_type' overrides previous value. (CMD-018)
 ****************************************
 Report : timing
-	-path_type full
+	-path_type full_clock_expanded
 	-delay_type max
+	-input_pins
+	-nets
 	-max_paths 1
-	-pba_mode exhaustive
+	-transition_time
+	-capacitance
 	-sort_by slack
 Design : multi-scenario design
 Version: Q-2019.12-SP5-2
-Date   : Fri Nov 20 11:53:12 2026
+Date   : Fri Nov 20 12:13:14 2026
 ****************************************
 
-Warning: Exhaustive path-based analysis may take a long time using the current PrimeTime settings. Try using the following settings, which may reduce the runtime of the analysis:
-         - Use the -slack_lesser_than option (UITE-479)
 
 Start of Master/Slave Task Processing
 -------------------------------------
-Started    : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_min'
 Started    : Command execution in scenario 'ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max'
+Started    : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_min'
 Started    : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_max'
-Started    : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_max'
 Started    : Command execution in scenario 'ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_min'
 Started    : Command execution in scenario 'ss0p81vn40c_rcworst_tm40_0p0/rpt/ss0p81vn40c_rcworst_tm40_0p0_max'
-Started    : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_min'
+Started    : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_max'
 Started    : Command execution in scenario 'ff1p4v115c_rcworst_t115_0p0/rpt/ff1p4v115c_rcworst_t115_0p0_max'
-Started    : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_min'
+Started    : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_min'
 Started    : Command execution in scenario 'ff1p4v115c_rcworst_t115_0p0/rpt/ff1p4v115c_rcworst_t115_0p0_min'
-Started    : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_max'
 Started    : Command execution in scenario 'ss0p81vn40c_rcworst_tm40_0p0/rpt/ss0p81vn40c_rcworst_tm40_0p0_min'
-
- Warning: UITE-479 has occurred in ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max 
-
- Warning: UITE-416 has occurred in ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max 
+Started    : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_min'
+Started    : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_max'
 
  Warning: UITE-416 has occurred in ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max 
-Succeeded  : Command execution in scenario 'ss0p81vn40c_rcworst_tm40_0p0/rpt/ss0p81vn40c_rcworst_tm40_0p0_max'
+
+ Warning: UITE-416 has occurred in ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max 
 Succeeded  : Command execution in scenario 'ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max'
+Succeeded  : Command execution in scenario 'ss0p81vn40c_rcworst_tm40_0p0/rpt/ss0p81vn40c_rcworst_tm40_0p0_max'
 Succeeded  : Command execution in scenario 'ff1p4v115c_rcworst_t115_0p0/rpt/ff1p4v115c_rcworst_t115_0p0_min'
-Succeeded  : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_min'
 Succeeded  : Command execution in scenario 'ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_min'
-Succeeded  : Command execution in scenario 'ff1p4v115c_rcworst_t115_0p0/rpt/ff1p4v115c_rcworst_t115_0p0_max'
-Succeeded  : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_min'
+Succeeded  : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_min'
 Succeeded  : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_max'
+Succeeded  : Command execution in scenario 'ss0p81v160c_rcworst_t160_0p0/rpt/ss0p81v160c_rcworst_t160_0p0_min'
 Succeeded  : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_min'
+Succeeded  : Command execution in scenario 'ff1p4v115c_rcworst_t115_0p0/rpt/ff1p4v115c_rcworst_t115_0p0_max'
 Succeeded  : Command execution in scenario 'ff1p4v115c_cbest_t115_0p0/rpt/ff1p4v115c_cbest_t115_0p0_max'
-Succeeded  : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_max'
 Succeeded  : Command execution in scenario 'ss0p81vn40c_rcworst_tm40_0p0/rpt/ss0p81vn40c_rcworst_tm40_0p0_min'
+Succeeded  : Command execution in scenario 'ff1p4v115c_cworst_t115_0p0/rpt/ff1p4v115c_cworst_t115_0p0_max'
 -----------------------------------
 End of Master/Slave Task Processing
 
@@ -55,77 +55,323 @@ End of Master/Slave Task Processing
   Endpoint: dig/lane0/rx_rx_valid_i_reg
                (rising edge-triggered flip-flop clocked by rx0_asic_wclk)
   Path Group: rx0_asic_wclk
-  Path Type: max  (recalculated)
+  Path Type: max
   Scenario: ss0p81vn40c_cworst_tm40_0p0/rpt/ss0p81vn40c_cworst_tm40_0p0_max
 
-  Point                                                   Incr       Path
-  ------------------------------------------------------------------------------
-  clock stat0_rx_clk_i (rise edge)                       0.000      0.000
-  clock network delay (propagated)                       1.178      1.178
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock stat0_rx_clk_i (rise edge)                         0.0000     0.0000
+  clock rx0_ana_dword_iclk_i (source latency)              0.0000     0.0000
+  ana/lane0/rx_ana_dword_iclk_i (lane_ana)      0.0000     0.0000     0.0000 r
+  ana/lane0/rx_ana_dword_clk (lane_ana)         0.0718     0.4047 &   0.4047 r
+  ana/rx0_ana_dword_clk (net)    2   0.0303 
+  dig/lane0/rx_scan_rx_ana_dword_clk_mux_hand_mux_U1/D0 (SEH_MUX2_2)
+                                                0.0569     0.0081 &   0.4128 r
+  dig/lane0/rx_scan_rx_ana_dword_clk_mux_hand_mux_U1/X (SEH_MUX2_2)
+                                                0.0218     0.0933 &   0.5062 r
+  dig/lane0/rx_rx_ana_dword_clk_s (net)
+                                 1   0.0023 
+  dig/lane0/cto_inv_drc_8797/A (SEH_INV_S_4)    0.0218     0.0001 &   0.5063 r
+  dig/lane0/cto_inv_drc_8797/X (SEH_INV_S_4)    0.0261     0.0299 &   0.5362 f
+  dig/lane0/cts36 (net)          2   0.0064 
+  dig/lane0/cto_inv_drc_8796/A (SEH_INV_S_8)    0.0260     0.0002 &   0.5364 f
+  dig/lane0/cto_inv_drc_8796/X (SEH_INV_S_8)    0.0340     0.0360 &   0.5725 r
+  dig/lane0/cts35 (net)          2   0.0240 
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0344     0.0038 &   0.5763 r
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0246     0.0535 &   0.6297 r
+  dig/lane0/rx_dig_clk (net)     3   0.0621 
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg_Q_vip5004/A (SEH_INV_S_4)
+                                                0.0250     0.0025 &   0.6322 r
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg_Q_vip5004/X (SEH_INV_S_4)
+                                                0.0231     0.0305 &   0.6627 f
+  dig/lane0/cts9 (net)           1   0.0040 
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg_Q_vip5003/A (SEH_INV_S_8)
+                                                0.0231     0.0002 &   0.6629 f
+  dig/lane0/rx_pwr_ctl_rx_dword_ckg_hand_clk_gate_cg_Q_vip5003/X (SEH_INV_S_8)
+                                                0.0725     0.0558 &   0.7187 r
+  dig/lane0/cts8 (net)           6   0.0713 
+  dig/lane0/rx_stat_cptr_rx_dig_clk_gate_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0737     0.0050 &   0.7236 r
+  dig/lane0/rx_stat_cptr_rx_dig_clk_gate_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0147     0.0665 &   0.7902 r
+  dig/lane0/rx_stat_cptr_rx_dig_div2_clk (net)
+                                 5   0.0195 
+  dig/lane0/rx_stat_cptr_statclk_glcm_clk_b_s_gate_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0150     0.0021 &   0.7923 r
+  dig/lane0/rx_stat_cptr_statclk_glcm_clk_b_s_gate_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0082     0.0340 &   0.8263 r
+  dig/lane0/rx_stat_cptr_statclk_glcm_clk_b_gated (net)
+                                 1   0.0009 
+  dig/lane0/rx_stat_cptr_statclk_glcm_clk_a_or_b_hand_buf_U2/A2 (SEH_OR2_2)
+                                                0.0082     0.0000 &   0.8263 r
+  dig/lane0/rx_stat_cptr_statclk_glcm_clk_a_or_b_hand_buf_U2/X (SEH_OR2_2) (gclock source)
+                                                0.0116     0.0348 &   0.8611 r
+  dig/lane0/rx_stat_cptr_stat_clk_mux (net)
+                                 1   0.0007 
+  dig/lane0/rx_stat_cptr_scan_stat_clk_mux_hand_mux_U1/D0 (SEH_MUX2_2)
+                                                0.0116     0.0000 &   0.8611 r
+  dig/lane0/rx_stat_cptr_scan_stat_clk_mux_hand_mux_U1/X (SEH_MUX2_2)
+                                                0.0573     0.0994 &   0.9605 r
+  dig/lane0/rx_stat_cptr_stat_clk_s (net)
+                                 4   0.0120 
+  dig/lane0/cts_inv_26547694/A (SEH_INV_S_8)    0.0575     0.0009 &   0.9614 r
+  dig/lane0/cts_inv_26547694/X (SEH_INV_S_8)    0.0350     0.0424 &   1.0038 f
+  dig/lane0/ctsbuf_net_342640 (net)
+                                 1   0.0121 
+  dig/lane0/cts_inv_26507690/A (SEH_INV_S_8)    0.0356     0.0025 &   1.0063 f
+  dig/lane0/cts_inv_26507690/X (SEH_INV_S_8)    0.0247     0.0347 &   1.0410 r
+  dig/lane0/ctsbuf_net_341639 (net)
+                                 1   0.0144 
+  dig/lane0/rx_stat_cptr_en_ck_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0248     0.0021 &   1.0431 r
+  dig/lane0/rx_stat_cptr_en_ck_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0210     0.0472 &   1.0904 r
+  dig/lane0/rx_stat_cptr_stat_clk (net)
+                                 8   0.0407 
+  dig/lane0/cts_inv_24197459/A (SEH_INV_S_8)    0.0214     0.0023 &   1.0926 r
+  dig/lane0/cts_inv_24197459/X (SEH_INV_S_8)    0.0564     0.0488 &   1.1414 f
+  dig/lane0/ctsbuf_net_292590 (net)
+                                 9   0.0368 
+  dig/lane0/cts_inv_23857425/A (SEH_INV_S_10)   0.0566     0.0029 &   1.1443 f
+  dig/lane0/cts_inv_23857425/X (SEH_INV_S_10)   0.0413     0.0519 &   1.1962 r
+  dig/lane0/ctsbuf_net_284582 (net)
+                                16   0.0223 
   dig/lane0/rx_stat_cptr_stcnt_0_in_vec_s01_reg_37_/CK (SEH_FSDPRBQ_V2_2)
-                                                         0.000      1.178 r
+                                                0.0440     0.0030 &   1.1992 r
   dig/lane0/rx_stat_cptr_stcnt_0_in_vec_s01_reg_37_/Q (SEH_FSDPRBQ_V2_2) <-
-                                                         0.163 &    1.340 r
-  dig/lane0/U18915/S (SEN_ADDF_V1_2)                     0.106 &    1.447 f
-  dig/lane0/U18907/CO (SEN_ADDF_V1_2)                    0.064 &    1.511 f
-  dig/lane0/intadd_45_U3/S (SEN_ADDF_V1_2)               0.105 &    1.616 r
-  dig/lane0/U18921/S (SEN_ADDF_V1_2)                     0.102 &    1.718 f
-  dig/lane0/intadd_11_U4/CO (SEN_ADDF_V1_2)              0.060 &    1.779 f
-  dig/lane0/intadd_11_U3/S (SEN_ADDF_V1_2)               0.097 &    1.875 r
-  dig/lane0/U18938/X (SEN_ND2_MM_2)                      0.026 &    1.901 f
-  dig/lane0/U18939/X (SEN_AOI21_4)                       0.033 &    1.935 r
-  dig/lane0/U18940/X (SEN_ND2_MM_4)                      0.027 &    1.961 f
-  dig/lane0/U18941/X (SEN_AOI21_4)                       0.025 &    1.986 r
-  dig/lane0/U18965/CO (SEN_ADDF_V1_2)                    0.057 &    2.043 r
-  dig/lane0/U18968/CO (SEN_ADDF_V1_2)                    0.062 &    2.105 r
-  dig/lane0/U18971/X (SEN_OAI21_2)                       0.032 &    2.137 f
-  dig/lane0/U1397/X (SEN_NR2_4)                          0.031 &    2.168 r
-  dig/lane0/U18979/X (SEN_ND2_MM_4)                      0.020 &    2.188 f
-  dig/lane0/U1396/X (SEN_NR2_4)                          0.025 &    2.212 r
-  dig/lane0/U18988/X (SEN_ND2_MM_4)                      0.022 &    2.235 f
-  dig/lane0/U1395/X (SEN_NR2_MM_8)                       0.023 &    2.257 r
-  dig/lane0/ZBUF_2_inst_18184/X (SEN_BUF_4)              0.026 &    2.283 r
-  dig/lane0/U18997/X (SEN_ND2_8)                         0.017 &    2.300 f
-  dig/lane0/U19114/X (SEN_ND2_MM_16)                     0.030 &    2.330 r
-  dig/lane0/U18944/X (SEN_INV_16)                        0.026 &    2.357 f
-  dig/lane0/U18947/X (SEN_NR3_4)                         0.037 &    2.394 r
-  dig/lane0/U18948/X (SEN_ND2_4)                         0.023 &    2.417 f
-  dig/lane0/U18950/X (SEN_NR2_MM_4)                      0.018 &    2.435 r
-  dig/lane0/U18951/X (SEN_ND2_MM_2)                      0.024 &    2.459 f
-  dig/lane0/U19101/X (SEN_OA2BB2_2)                      0.046 &    2.505 r
-  dig/lane0/U482/X (SEN_INV_2)                           0.017 &    2.522 f
-  dig/lane0/ropt_d_inst_22462/X (SEN_BUF_S_4)            0.025 &    2.548 f
-  dig/lane0/ZBUF_610_inst_3421/X (SEN_BUF_S_8)           0.027 &    2.574 f
-  dig/lane0/U4512/X (SEN_AOI22_2)                        0.024 &    2.599 r
-  dig/lane0/U4515/X (SEN_ND3_2)                          0.030 &    2.629 f
-  dig/lane0/U4516/X (SEN_AOI211_2)                       0.049 &    2.678 r
-  dig/lane0/U4517/X (SEN_AOI22_2)                        0.046 &    2.724 f
-  dig/lane0/U4634/X (SEN_ND2_MM_2)                       0.036 &    2.759 r
-  dig/lane0/U638/X (SEN_NR2_4)                           0.022 &    2.781 f
-  dig/lane0/U4643/X (SEN_ND2_MM_4)                       0.016 &    2.797 r
-  dig/lane0/ZBUF_2_inst_3444/X (SEH_BUF_2)               0.038 &    2.836 r
-  dig/lane0/U4648/X (SEN_ND2_MM_2)                       0.034 &    2.870 f
-  dig/lane0/U4652/X (SEN_AOI211_2)                       0.050 &    2.920 r
-  dig/lane0/U4653/X (SEN_OAI21_2)                        0.031 &    2.951 f
-  dig/lane0/U4654/X (SEN_AOI211_2)                       0.043 &    2.994 r
-  dig/lane0/U1786/X (SEN_NR2_2)                          0.026 &    3.020 f
-  dig/lane0/U92/X (SEN_INV_S_4)                          0.016 &    3.036 r
-  dig/lane0/U7573/X (SEN_OAI22_2)                        0.032 &    3.068 f
-  dig/lane0/U7586/X (SEN_OAI211_2)                       0.051 &    3.119 r
-  dig/lane0/U7620/X (SEN_ND2_MM_4)                       0.027 &    3.146 f
-  dig/lane0/U1662/X (SEN_NR2_MM_8)                       0.028 &    3.175 r
-  dig/lane0/rx_rx_valid_i_reg/D (SEH_FSDPRBQ_V2_8)       0.004 &    3.179 r
-  data arrival time                                                 3.179
+                                                0.0217     0.1742 &   1.3734 f
+  dig/lane0/rx_stat_cptr_stcnt_0_in_vec_s01[37] (net)
+                                 2   0.0039 
+  dig/lane0/U18915/B (SEN_ADDF_V1_2)            0.0217     0.0002 &   1.3736 f
+  dig/lane0/U18915/S (SEN_ADDF_V1_2)            0.0236     0.1114 &   1.4850 r
+  dig/lane0/n17405 (net)         1   0.0037 
+  dig/lane0/U18907/A (SEN_ADDF_V1_2)            0.0236     0.0003 &   1.4852 r
+  dig/lane0/U18907/CO (SEN_ADDF_V1_2)           0.0227     0.0666 &   1.5519 r
+  dig/lane0/intadd_45_A_1_ (net)
+                                 1   0.0041 
+  dig/lane0/intadd_45_U3/A (SEN_ADDF_V1_2)      0.0227     0.0003 &   1.5521 r
+  dig/lane0/intadd_45_U3/S (SEN_ADDF_V1_2)      0.0216     0.1065 &   1.6586 f
+  dig/lane0/intadd_45_SUM_1_ (net)
+                                 1   0.0032 
+  dig/lane0/U18921/A (SEN_ADDF_V1_2)            0.0217     0.0010 &   1.6596 f
+  dig/lane0/U18921/S (SEN_ADDF_V1_2)            0.0208     0.1068 &   1.7663 r
+  dig/lane0/intadd_11_B_1_ (net)
+                                 1   0.0028 
+  dig/lane0/intadd_11_U4/B (SEN_ADDF_V1_2)      0.0209     0.0001 &   1.7664 r
+  dig/lane0/intadd_11_U4/CO (SEN_ADDF_V1_2)     0.0182     0.0624 &   1.8288 r
+  dig/lane0/intadd_11_n3 (net)
+                                 1   0.0023 
+  dig/lane0/intadd_11_U3/CI (SEN_ADDF_V1_2)     0.0182     0.0001 &   1.8289 r
+  dig/lane0/intadd_11_U3/S (SEN_ADDF_V1_2)      0.0210     0.1005 &   1.9294 f
+  dig/lane0/intadd_11_SUM_2_ (net)
+                                 2   0.0029 
+  dig/lane0/U1401/A2 (SEN_NR2_2)                0.0210     0.0002 &   1.9296 f
+  dig/lane0/U1401/X (SEN_NR2_2)                 0.0289     0.0340 &   1.9636 r
+  dig/lane0/n17446 (net)         2   0.0035 
+  dig/lane0/U18939/B (SEN_AOI21_4)              0.0289     0.0001 &   1.9637 r
+  dig/lane0/U18939/X (SEN_AOI21_4)              0.0224     0.0245 &   1.9881 f
+  dig/lane0/n17438 (net)         2   0.0056 
+  dig/lane0/U1400/A2 (SEN_NR2_4)                0.0224     0.0004 &   1.9885 f
+  dig/lane0/U1400/X (SEN_NR2_4)                 0.0218     0.0287 &   2.0172 r
+  dig/lane0/n17451 (net)         2   0.0035 
+  dig/lane0/U18941/B (SEN_AOI21_4)              0.0218     0.0006 &   2.0178 r
+  dig/lane0/U18941/X (SEN_AOI21_4)              0.0136     0.0176 &   2.0354 f
+  dig/lane0/n17458 (net)         1   0.0022 
+  dig/lane0/U18965/CI (SEN_ADDF_V1_2)           0.0136     0.0001 &   2.0354 f
+  dig/lane0/U18965/CO (SEN_ADDF_V1_2)           0.0180     0.0563 &   2.0917 f
+  dig/lane0/n17462 (net)         1   0.0023 
+  dig/lane0/U18968/CI (SEN_ADDF_V1_2)           0.0180     0.0001 &   2.0918 f
+  dig/lane0/U18968/CO (SEN_ADDF_V1_2)           0.0237     0.0635 &   2.1553 f
+  dig/lane0/n17471 (net)         4   0.0049 
+  dig/lane0/U18971/A2 (SEN_OAI21_2)             0.0237     0.0001 &   2.1554 f
+  dig/lane0/U18971/X (SEN_OAI21_2)              0.0310     0.0364 &   2.1918 r
+  dig/lane0/n17469 (net)         2   0.0034 
+  dig/lane0/U1397/A2 (SEN_NR2_4)                0.0310     0.0001 &   2.1919 r
+  dig/lane0/U1397/X (SEN_NR2_4)                 0.0153     0.0204 &   2.2124 f
+  dig/lane0/n17477 (net)         2   0.0034 
+  dig/lane0/U18979/A1 (SEN_ND2_MM_4)            0.0153     0.0001 &   2.2125 f
+  dig/lane0/U18979/X (SEN_ND2_MM_4)             0.0166     0.0152 &   2.2277 r
+  dig/lane0/n17479 (net)         2   0.0036 
+  dig/lane0/U1396/A2 (SEN_NR2_4)                0.0166     0.0002 &   2.2279 r
+  dig/lane0/U1396/X (SEN_NR2_4)                 0.0158     0.0152 &   2.2432 f
+  dig/lane0/n17485 (net)         2   0.0036 
+  dig/lane0/U18988/A1 (SEN_ND2_MM_4)            0.0158     0.0006 &   2.2438 f
+  dig/lane0/U18988/X (SEN_ND2_MM_4)             0.0190     0.0175 &   2.2612 r
+  dig/lane0/n17490 (net)         2   0.0055 
+  dig/lane0/U1395/A2 (SEN_NR2_MM_8)             0.0190     0.0008 &   2.2620 r
+  dig/lane0/U1395/X (SEN_NR2_MM_8)              0.0264     0.0232 &   2.2853 f
+  dig/lane0/n17499 (net)         3   0.0039 
+  dig/lane0/ZBUF_2_inst_18184/A (SEN_BUF_4)     0.0264     0.0000 &   2.2853 f
+  dig/lane0/ZBUF_2_inst_18184/X (SEN_BUF_4)     0.0122     0.0341 &   2.3194 f
+  dig/lane0/ZBUF_2_183 (net)     1   0.0064 
+  dig/lane0/U18997/A1 (SEN_ND2_8)               0.0122     0.0006 &   2.3200 f
+  dig/lane0/U18997/X (SEN_ND2_8)                0.0403     0.0147 &   2.3347 r
+  dig/lane0/n17503 (net)         3   0.0122 
+  dig/lane0/U19114/A2 (SEN_ND2_MM_16)           0.0403     0.0000 &   2.3347 r
+  dig/lane0/U19114/X (SEN_ND2_MM_16)            0.0221     0.0289 &   2.3635 f
+  dig/lane0/n17505 (net)        11   0.0263 
+  dig/lane0/U18944/A (SEN_INV_16)               0.1264     0.0000 &   2.3635 f
+  dig/lane0/U18944/X (SEN_INV_16)               0.0298     0.0445 &   2.4081 r
+  dig/lane0/n17486 (net)         4   0.0094 
+  dig/lane0/U18947/A1 (SEN_NR3_4)               0.0300     0.0014 &   2.4094 r
+  dig/lane0/U18947/X (SEN_NR3_4)                0.0162     0.0187 &   2.4281 f
+  dig/lane0/n17502 (net)         6   0.0084 
+  dig/lane0/U18948/A2 (SEN_ND2_4)               0.0429     0.0000 &   2.4281 f
+  dig/lane0/U18948/X (SEN_ND2_4)                0.0157     0.0290 &   2.4571 r
+  dig/lane0/n17507 (net)         2   0.0032 
+  dig/lane0/U18950/A1 (SEN_NR2_MM_4)            0.0157     0.0001 &   2.4572 r
+  dig/lane0/U18950/X (SEN_NR2_MM_4)             0.0186     0.0201 &   2.4774 f
+  dig/lane0/n17472 (net)         2   0.0029 
+  dig/lane0/U18951/A2 (SEN_ND2_MM_2)            0.0186     0.0002 &   2.4776 f
+  dig/lane0/U18951/X (SEN_ND2_MM_2)             0.0192     0.0224 &   2.5000 r
+  dig/lane0/n17495 (net)         2   0.0032 
+  dig/lane0/U19101/A2 (SEN_OA2BB2_2)            0.0192     0.0003 &   2.5003 r
+  dig/lane0/U19101/X (SEN_OA2BB2_2)             0.0311     0.0352 &   2.5355 f
+  dig/lane0/n12410 (net)         7   0.0097 
+  dig/lane0/U482/A (SEN_INV_2)                  0.0373     0.0000 &   2.5355 f
+  dig/lane0/U482/X (SEN_INV_2)                  0.0146     0.0258 &   2.5613 r
+  dig/lane0/n1670 (net)          1   0.0017 
+  dig/lane0/ropt_d_inst_22462/A (SEN_BUF_S_4)   0.0146     0.0005 &   2.5618 r
+  dig/lane0/ropt_d_inst_22462/X (SEN_BUF_S_4)   0.0135     0.0281 &   2.5899 r
+  dig/lane0/ropt_net_13036 (net)
+                                 4   0.0070 
+  dig/lane0/ZBUF_610_inst_3421/A (SEN_BUF_S_8)
+                                                0.0136     0.0003 &   2.5902 r
+  dig/lane0/ZBUF_610_inst_3421/X (SEN_BUF_S_8)
+                                                0.0116     0.0281 &   2.6183 r
+  dig/lane0/ZBUF_610_30 (net)    8   0.0098 
+  dig/lane0/U4450/A1 (SEH_AOI22_2)              0.0116     0.0000 &   2.6183 r
+  dig/lane0/U4450/X (SEH_AOI22_2)               0.0433     0.0276 &   2.6459 f
+  dig/lane0/n1517 (net)          1   0.0017 
+  dig/lane0/U4452/B1 (SEN_OAI211_2)             0.0433     0.0016 &   2.6475 f
+  dig/lane0/U4452/X (SEN_OAI211_2)              0.0345     0.0289 &   2.6764 r
+  dig/lane0/n1524 (net)          1   0.0021 
+  dig/lane0/U4459/A2 (SEN_OAI22_2)              0.0344     0.0025 &   2.6789 r
+  dig/lane0/U4459/X (SEN_OAI22_2)               0.0311     0.0364 &   2.7153 f
+  dig/lane0/n1736 (net)          2   0.0026 
+  dig/lane0/U4460/B2 (SEN_AOI211_2)             0.0311     0.0015 &   2.7168 f
+  dig/lane0/U4460/X (SEN_AOI211_2)              0.0472     0.0567 &   2.7735 r
+  dig/lane0/n1734 (net)          2   0.0030 
+  dig/lane0/U4487/A1 (SEH_ND3_2)                0.0472     0.0001 &   2.7736 r
+  dig/lane0/U4487/X (SEH_ND3_2)                 0.0576     0.0627 &   2.8363 f
+  dig/lane0/n1560 (net)          1   0.0034 
+  dig/lane0/U231/A (SEN_INV_S_2)                0.0576     0.0065 &   2.8428 f
+  dig/lane0/U231/X (SEN_INV_S_2)                0.0208     0.0332 &   2.8760 r
+  dig/lane0/n1561 (net)          1   0.0019 
+  dig/lane0/U4488/A3 (SEN_ND3_2)                0.0209     0.0007 &   2.8767 r
+  dig/lane0/U4488/X (SEN_ND3_2)                 0.0417     0.0424 &   2.9191 f
+  dig/lane0/n1562 (net)          1   0.0041 
+  dig/lane0/U4489/B2 (SEN_AOI211_2)             0.0416     0.0060 &   2.9251 f
+  dig/lane0/U4489/X (SEN_AOI211_2)              0.0664     0.0769 &   3.0020 r
+  dig/lane0/n1566 (net)          1   0.0057 
+  dig/lane0/U4490/A3 (SEN_ND3_2)                0.0664     0.0118 &   3.0138 r
+  dig/lane0/U4490/X (SEN_ND3_2)                 0.0603     0.0679 &   3.0817 f
+  dig/lane0/n7666 (net)          3   0.0061 
+  dig/lane0/U1548/A1 (SEN_NR2_MM_2)             0.0603     0.0030 &   3.0846 f
+  dig/lane0/U1548/X (SEN_NR2_MM_2)              0.0365     0.0480 &   3.1326 r
+  dig/lane0/n2111 (net)          2   0.0034 
+  dig/lane0/U1786/A2 (SEN_NR2_2)                0.0366     0.0001 &   3.1327 r
+  dig/lane0/U1786/X (SEN_NR2_2)                 0.0202     0.0270 &   3.1597 f
+  dig/lane0/rx_align_com_bad (net)
+                                 2   0.0030 
+  dig/lane0/U92/A (SEN_INV_S_4)                 0.0202     0.0001 &   3.1598 f
+  dig/lane0/U92/X (SEN_INV_S_4)                 0.0116     0.0164 &   3.1761 r
+  dig/lane0/n7662 (net)          2   0.0036 
+  dig/lane0/U7573/A1 (SEN_OAI22_2)              0.0116     0.0001 &   3.1762 r
+  dig/lane0/U7573/X (SEN_OAI22_2)               0.0520     0.0327 &   3.2089 f
+  dig/lane0/n16179 (net)         4   0.0051 
+  dig/lane0/U7586/A2 (SEN_OAI211_2)             0.0519     0.0007 &   3.2096 f
+  dig/lane0/U7586/X (SEN_OAI211_2)              0.0546     0.0570 &   3.2666 r
+  dig/lane0/n4559 (net)          2   0.0039 
+  dig/lane0/U7620/A2 (SEN_ND2_MM_4)             0.0547     0.0001 &   3.2667 r
+  dig/lane0/U7620/X (SEN_ND2_MM_4)              0.0232     0.0319 &   3.2986 f
+  dig/lane0/n4560 (net)          1   0.0044 
+  dig/lane0/U1662/A2 (SEN_NR2_MM_8)             0.0233     0.0001 &   3.2987 f
+  dig/lane0/U1662/X (SEN_NR2_MM_8)              0.0374     0.0305 &   3.3292 r
+  dig/lane0/rx_N45 (net)         1   0.0128 
+  dig/lane0/rx_rx_valid_i_reg/D (SEH_FSDPRBQ_V2_8)
+                                                0.0374     0.0058 &   3.3350 r
+  data arrival time                                                   3.3350
 
-  clock rx0_asic_wclk (rise edge)                        1.600      1.600
-  clock network delay (propagated)                       0.826      2.426
-  clock reconvergence pessimism                          0.000      2.426
-  clock uncertainty                                     -0.100      2.326
-  dig/lane0/rx_rx_valid_i_reg/CK (SEH_FSDPRBQ_V2_8)                 2.326 r
-  library setup time                                    -0.063      2.264
-  data required time                                                2.264
-  ------------------------------------------------------------------------------
-  data required time                                                2.264
-  data arrival time                                                -3.179
-  ------------------------------------------------------------------------------
-  slack (VIOLATED)                                                 -0.915
+  clock rx0_asic_wclk (rise edge)                          1.6000     1.6000
+  clock rx0_ana_word_iclk_i (source latency)               0.0000     1.6000
+  ana/lane0/rx_ana_word_iclk_i (lane_ana)       0.0000     0.0000     1.6000 r
+  ana/lane0/rx_ana_word_clk (lane_ana)          0.0399     0.2746 &   1.8746 r
+  ana/p_abuf0 (net)              2   0.0132 
+  ana/cts_inv_15096549/A (SEH_INV_S_16)         0.0322     0.0003 &   1.8749 r
+  ana/cts_inv_15096549/X (SEH_INV_S_16)         0.0294     0.0256 &   1.9005 f
+  ana/ctsbuf_net_66364 (net)     1   0.0329 
+  ana/cts_inv_15056545/A (SEH_INV_S_16)         0.0407     0.0121 &   1.9126 f
+  ana/cts_inv_15056545/X (SEH_INV_S_16)         0.0292     0.0290 &   1.9416 r
+  ana/rx0_ana_word_clk (net)     1   0.0256 
+  dig/lane0/rx_scan_rx_ana_word_clk_mux_hand_mux_U1/D0 (SEH_MUX2_2)
+                                                0.0304     0.0067 &   1.9484 r
+  dig/lane0/rx_scan_rx_ana_word_clk_mux_hand_mux_U1/X (SEH_MUX2_2)
+                                                0.0676     0.0833 &   2.0317 r
+  dig/lane0/rx_rx_ana_word_clk_s (net)
+                                 3   0.0146 
+  dig/lane0/cts_inv_15006540/A (SEH_INV_S_16)   0.0680     0.0007 &   2.0324 r
+  dig/lane0/cts_inv_15006540/X (SEH_INV_S_16)   0.0277     0.0308 &   2.0633 f
+  dig/lane0/ctsbuf_net_64362 (net)
+                                 1   0.0061 
+  dig/lane0/cts_inv_14966536/A (SEH_INV_S_16)   0.0277     0.0002 &   2.0634 f
+  dig/lane0/cts_inv_14966536/X (SEH_INV_S_16)   0.0154     0.0175 &   2.0809 r
+  dig/lane0/ctsbuf_net_63361 (net)
+                                 1   0.0136 
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0159     0.0022 &   2.0830 r
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0132     0.0283 &   2.1114 r
+  dig/lane0/rx_rx_dig_word_clk (net)
+                                 5   0.0153 
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg_Q_vip5010/A (SEH_INV_S_4)
+                                                0.0136     0.0019 &   2.1133 r
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg_Q_vip5010/X (SEH_INV_S_4)
+                                                0.0129     0.0126 &   2.1259 f
+  dig/lane0/cts15 (net)          1   0.0021 
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg_Q_vip5009/A (SEH_INV_S_4)
+                                                0.0129     0.0001 &   2.1259 f
+  dig/lane0/rx_pwr_ctl_rx_word_ckg_hand_clk_gate_cg_Q_vip5009/X (SEH_INV_S_4)
+                                                0.0837     0.0353 &   2.1613 r
+  dig/lane0/cts14 (net)          2   0.0369 
+  dig/lane0/rx_rx_dword_word_glcm_clk_b_s_gate_hand_clk_gate_cg/CK (SEH_CKGTPLT_V7_24)
+                                                0.0851     0.0159 &   2.1772 r
+  dig/lane0/rx_rx_dword_word_glcm_clk_b_s_gate_hand_clk_gate_cg/Q (SEH_CKGTPLT_V7_24)
+                                                0.0099     0.0486 &   2.2258 r
+  dig/lane0/rx_rx_dword_word_glcm_clk_b_gated (net)
+                                 1   0.0017 
+  dig/lane0/rx_rx_dword_word_glcm_clk_a_or_b_hand_buf_U2/A2 (SEH_OR2_2)
+                                                0.0099     0.0001 &   2.2259 r
+  dig/lane0/rx_rx_dword_word_glcm_clk_a_or_b_hand_buf_U2/X (SEH_OR2_2) (gclock source)
+                                                0.0138     0.0260 &   2.2518 r
+  dig/lane0/rx_rx_asic_clk_prescan (net)
+                                 1   0.0013 
+  dig/lane0/rx_scan_rx_asic_clk_mux_hand_mux_U1/D0 (SEH_MUX2_2)
+                                                0.0138     0.0000 &   2.2519 r
+  dig/lane0/rx_scan_rx_asic_clk_mux_hand_mux_U1/X (SEH_MUX2_2)
+                                                0.0856     0.0824 &   2.3343 r
+  dig/lane0/rx_clk (net)         2   0.0186 
+  dig/lane0/cts_inv_31368246/A (SEH_INV_S_10)   0.0859    -0.0001 &   2.3342 r
+  dig/lane0/cts_inv_31368246/X (SEH_INV_S_10)   0.0391     0.0446 &   2.3788 f
+  dig/lane0/ctsbuf_net_411709 (net)
+                                 2   0.0110 
+  dig/lane0/cts_inv_31328242/A (SEH_INV_S_16)   0.0391     0.0006 &   2.3795 f
+  dig/lane0/cts_inv_31328242/X (SEH_INV_S_16)   0.0299     0.0272 &   2.4067 r
+  dig/lane0/ctsbuf_net_410708 (net)
+                                16   0.0349 
+  dig/lane0/rx_rx_valid_i_reg/CK (SEH_FSDPRBQ_V2_8)
+                                                0.0295     0.0035 &   2.4102 r
+  clock reconvergence pessimism                            0.0000     2.4102
+  clock uncertainty                                       -0.1000     2.3102
+  library setup time                                      -0.0678     2.2424
+  data required time                                                  2.2424
+  -----------------------------------------------------------------------------
+  data required time                                                  2.2424
+  data arrival time                                                  -3.3350
+  -----------------------------------------------------------------------------
+  slack (VIOLATED)                                                   -1.0926
+
+
+1
